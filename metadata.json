@@ -1,0 +1,6 @@
+{
+  "name": "Your Voice Matters Portal",
+  "description": "An interactive digital poster and reporting portal for Murang'a University of Technology, featuring an elegant, responsive feedback dashboard with student illustration assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

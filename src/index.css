@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+html {
+  font-size: 0.9rem;
+}
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-mut-green: #b2d27f;
+  --color-mut-red: #9b0000;
+  --color-mut-blue: #2563eb;
+  
+  --color-red-800: #9b0000;
+  --color-red-900: #7a0000;
+  --color-blue-600: #2563eb;
+  --color-emerald-500: #b2d27f;
+}
+
+/* Dark mode thematic system */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #090d16 !important;
+  color: #f8fafc !important;
+}
+
+.dark .bg-white {
+  background-color: #111827 !important;
+  color: #f3f4f6 !important;
+}
+
+.dark .bg-slate-50,
+.dark .bg-slate-50\/40 {
+  background-color: #090d16 !important;
+}
+
+.dark .bg-slate-50\/80 {
+  background-color: #111827 !important;
+}
+
+.dark .text-slate-800,
+.dark .text-slate-700,
+.dark .text-slate-900,
+.dark .text-rose-950,
+.dark .text-slate-600 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-slate-500,
+.dark .text-slate-400 {
+  color: #9ca3af !important;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-rose-100,
+.dark .border-slate-200\/60 {
+  border-color: #374151 !important;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+}
+
+.dark input, 
+.dark textarea, 
+.dark select {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+  border-color: #4b5563 !important;
+}
+
+.dark input::placeholder, 
+.dark textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+/* High Contrast mode */
+.high-contrast {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.high-contrast .bg-white,
+.high-contrast .bg-slate-50,
+.high-contrast .bg-slate-100,
+.high-contrast .bg-rose-50,
+.high-contrast .bg-amber-50,
+.high-contrast .bg-indigo-50,
+.high-contrast .bg-blue-50,
+.high-contrast .bg-emerald-50,
+.high-contrast .bg-purple-50 {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.high-contrast.dark {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast.dark .bg-white,
+.high-contrast.dark .bg-slate-50,
+.high-contrast.dark .bg-slate-100,
+.high-contrast.dark .bg-rose-50,
+.high-contrast.dark .bg-amber-50,
+.high-contrast.dark .bg-indigo-50,
+.high-contrast.dark .bg-blue-50,
+.high-contrast.dark .bg-emerald-50,
+.high-contrast.dark .bg-purple-50 {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.high-contrast text,
+.high-contrast span,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast h4,
+.high-contrast p,
+.high-contrast a,
+.high-contrast button {
+  color: inherit !important;
+}
+
+.high-contrast button {
+  border: 2px solid currentColor !important;
+}
